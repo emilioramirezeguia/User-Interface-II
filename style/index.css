@@ -1,6 +1,6 @@
 /* Add CSS styling here */
 
-/* ==== Styles that apply to the entire document ==== */
+/* ==== ENTIRE DOCUMENT STYLES ==== */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -21,6 +21,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -44,4 +45,79 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* ==== HEADER STYLES ==== */
+
+header {
+  background-color: #4682B4;
+  color: white;
+  padding: 5%;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+}
+
+header nav {
+  margin-top: 2%;
+}
+
+header nav a {
+  background-color: white;
+  border: 1px solid red;
+  color: #4682B4;
+  letter-spacing: 1.5px;
+  padding: 0.5% 1.5%;
+  text-decoration: none;
+}
+
+/* ==== INTRO SECTION STYLES ==== */
+
+#intro {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#intro a {
+  background-color: white;
+  border: 1px solid red;
+  color: #4682B4;
+  letter-spacing: 1.5px;
+  padding: 0.5% 1.5%;
+  text-decoration: none;
+}
+
+#intro .intro-text h2 {
+  font-size: 1.5em;
+}
+
+#intro .intro-text a {}
+
+#intro .intro-text p {
+  line-height: 1.4;
+}
+
+/* ==== GALLERY SECTION STYLES === */
+
+#gallery {
+  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ==== FOOTER STYLES === */
+
+footer {
+  background-color: #4682B4;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+
+footer div {
 }
