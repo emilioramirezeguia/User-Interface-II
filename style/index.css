@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
   box-sizing: border-box;
+  max-width:100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -30,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  font-family: 'Roboto', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -52,12 +54,15 @@ table {
 header {
   background-color: #4682B4;
   color: white;
-  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
 }
 
 header h1 {
   font-size: 2em;
-  margin-bottom: 3%;
+  font-weight: 700;
+  margin-bottom: 2%;
   text-transform: uppercase;
 }
 
@@ -67,8 +72,17 @@ header nav {
 
 header nav a {
   background-color: white;
-  border: 1px solid red;
   color: #4682B4;
+  letter-spacing: 1.5px;
+  padding: 0.5% 1.5%;
+  text-decoration: none;
+  width: 25%;
+}
+
+header nav a:hover {
+  background-color: #4682B4;
+  border: 1px solid white;
+  color: white;
   letter-spacing: 1.5px;
   padding: 0.5% 1.5%;
   text-decoration: none;
@@ -77,36 +91,69 @@ header nav a {
 /* ==== INTRO SECTION STYLES ==== */
 
 #intro {
-  background-color: lightgray;
+  padding: 5%;
+}
+
+.intro-content {
   display: flex;
   justify-content: space-evenly;
 }
 
-#intro a {
-  background-color: white;
-  border: 1px solid red;
-  color: #4682B4;
+.intro-content div.intro-img {
+  width: 50%;
+}
+
+.intro-content div.intro-text {
+  width: 50%;
+}
+
+.intro-content div.intro-text h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.intro-content div.intro-text a {
+  background-color: #4682B4;
+  color: white;
   letter-spacing: 1.5px;
-  padding: 0.5% 1.5%;
+  padding: 2% 3.0%;
   text-decoration: none;
 }
 
-#intro .intro-text h2 {
-  font-size: 1.5em;
+.intro-content div.intro-text a:hover {
+  background-color: white;
+  border: 1px solid #4682B4;
+  color: #4682B4;
+  letter-spacing: 1.5px;
+  padding: 2% 3.0%;
+  text-decoration: none;
 }
 
-#intro .intro-text a {}
-
-#intro .intro-text p {
-  line-height: 1.4;
+.intro-content div.intro-text p {
+  line-height: 2;
+  margin-top: 5%;
 }
 
 /* ==== GALLERY SECTION STYLES === */
 
 #gallery {
-  background-color: lightblue;
+  padding: 5%;
+}
+
+.gallery-content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-content figure {
+  margin: 20px 5px;
+  text-align: center;
+}
+
+.gallery-content figure figcaption {
+  margin: 20px;
 }
 
 /* ==== FOOTER STYLES === */
@@ -119,5 +166,30 @@ footer {
   padding: 3%;
 }
 
-footer div {
+footer div.footer-content {
+  text-align: center;
+  width: 50%;
+}
+
+footer div.footer-content h3 {
+  font-size: 1.17em;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+div.footer-content > a {
+  background-color: white;
+  color: #4682B4;
+  letter-spacing: 1.5px;
+  padding: 2% 3.0%;
+  text-decoration: none;
+}
+
+div.footer-social-media {
+  margin-top: 5%;
+}
+
+ .footer-social-media a {
+   color: white;
+   padding: 0 1.5%;
 }
