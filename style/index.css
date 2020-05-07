@@ -18,7 +18,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
   box-sizing: border-box;
@@ -60,7 +60,7 @@ header {
 }
 
 header h1 {
-  font-size: 2em;
+  font-size: 3.2rem;
   font-weight: 700;
   margin-bottom: 2%;
   text-transform: uppercase;
@@ -104,11 +104,15 @@ header nav a:hover {
 }
 
 .intro-content div.intro-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
   width: 50%;
 }
 
 .intro-content div.intro-text h2 {
-  font-size: 1.5em;
+  font-size: 2.4rem;
   font-weight: 500;
   margin-bottom: 5%;
 }
@@ -117,8 +121,10 @@ header nav a:hover {
   background-color: #4682B4;
   color: white;
   letter-spacing: 1.5px;
-  padding: 2% 3.0%;
+  padding: 2% 3%;
+	text-align: center;
   text-decoration: none;
+	width: 25%;
 }
 
 .intro-content div.intro-text a:hover {
@@ -153,7 +159,7 @@ header nav a:hover {
 }
 
 .gallery-content figure figcaption {
-  margin: 20px;
+  margin: 5%;
 }
 
 /* ==== FOOTER STYLES === */
@@ -172,7 +178,7 @@ footer div.footer-content {
 }
 
 footer div.footer-content h3 {
-  font-size: 1.17em;
+  font-size: 1.872rem;
   font-weight: 500;
   margin-bottom: 5%;
 }
@@ -185,6 +191,15 @@ div.footer-content > a {
   text-decoration: none;
 }
 
+div.footer-content > a:hover {
+	background-color: #4682B4;
+	border: 1px solid white;
+	color: white;
+	letter-spacing: 1.5px;
+	padding: 2% 3%;
+	text-decoration: none;
+}
+
 div.footer-social-media {
   margin-top: 5%;
 }
@@ -192,4 +207,12 @@ div.footer-social-media {
  .footer-social-media a {
    color: white;
    padding: 0 1.5%;
+}
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 500px) {
+
 }
