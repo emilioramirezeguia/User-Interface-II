@@ -52,6 +52,21 @@ table {
 
 /* ==== HEADER STYLES ==== */
 
+#skip a {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+#skip a:focus {
+position:static;
+width:auto;
+height:auto;
+}
+
 header {
   background-color: #4682B4;
   color: white;
@@ -217,6 +232,8 @@ div.footer-social-media {
 
 /* ====== RESPONSIVE ====== */
 
+/* 800px screen size and below */
+
 @media (max-width: 800px) {
 	header {
 		padding: 4% 0;
@@ -254,6 +271,8 @@ div.footer-social-media {
 	}
 }
 
+/* 500px screen size and below */
+
 @media (max-width: 500px) {
 	header {
 		padding: 5% 0;
@@ -272,21 +291,22 @@ div.footer-social-media {
 		padding-right: 3%;
 	}
 
-	.intro-content div.intro-text a {
-	  padding: 5% 6%;
-		width: 50%;
-	}
-
 	.intro-content div.intro-img {
 		margin-top: 5%;
 		margin-bottom: 5%;
-		width: 90%;
 	}
 
 	.intro-content div.intro-text {
 		margin-top: 5%;
 		margin-bottom: 5%;
-		width: 90%;
+	}
+
+	.intro-content div.intro-text a {
+		width: 50%;
+	}
+
+	#gallery h3 {
+		font-size: 1.6rem;
 	}
 
 	footer div.footer-content {
@@ -301,4 +321,69 @@ div.footer-social-media {
 	div.footer-social-media {
 		margin-top: 20%;
 	}
+}
+
+/* 360px screen size and below */
+
+@media (max-width: 360px) {
+	header {
+		padding: 7% 0;
+	}
+
+	header h1 {
+		font-size: 2rem;
+	}
+
+	header nav {
+		margin-top: 5%;
+	}
+
+	header nav a {
+		font-size: 1.2rem;
+	}
+
+	.intro-content div.intro-img {
+		width: 300px;
+		height: 300px;
+		margin-top: 7.5%;
+		margin-bottom: 7.5%;
+	}
+
+	.intro-content div.intro-text {
+		margin-top: 7.5%;
+		margin-bottom: 7.5%;
+	}
+
+	.intro-content div.intro-text h2 {
+	  font-size: 1.872rem;
+	}
+
+	.intro-content div.intro-text a {
+		font-size: 1.1rem;
+		padding: 7% 8%;
+		width: 70%;
+	}
+
+	.intro-content div.intro-text p {
+		font-size: 1.1rem;
+	  margin-top: 10%;
+	}
+
+	footer div.footer-content {
+		margin: 3% 0;
+		width: 70%;
+	}
+
+	/* footer div.footer-content {
+		margin: 3% 0;
+	} */
+
+	/* footer div.footer-content h3 {
+		font-size: 1.6rem;
+		margin-bottom: 20%;
+	} */
+
+	/* div.footer-social-media {
+		margin-top: 20%;
+	} */
 }
