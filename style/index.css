@@ -58,7 +58,7 @@ header {
   display: flex;
   flex-direction: column;
 	align-items: center;
-  padding: 3%;
+  padding: 3% 0;
 }
 
 header h1 {
@@ -143,7 +143,16 @@ header nav a:hover {
 /* ==== GALLERY SECTION STYLES === */
 
 #gallery {
-  padding: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  padding: 2.5% 5% 5% 5%;
+}
+
+#gallery h3 {
+	font-size: 1.872rem;
+  font-weight: 500;
+	margin: 5% 0;
 }
 
 .gallery-content {
@@ -206,7 +215,12 @@ div.footer-social-media {
    padding: 0 1.5%;
 }
 
+/* ====== RESPONSIVE ====== */
+
 @media (max-width: 800px) {
+	header {
+		padding: 4% 0;
+	}
 
 	.intro-content {
 	  flex-direction: column;
@@ -241,5 +255,50 @@ div.footer-social-media {
 }
 
 @media (max-width: 500px) {
+	header {
+		padding: 5% 0;
+	}
 
+	header h1 {
+	  font-size: 2.4rem;
+	}
+
+	header nav {
+	  margin-top: 3%;
+	}
+
+	header nav a {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
+	.intro-content div.intro-text a {
+	  padding: 5% 6%;
+		width: 50%;
+	}
+
+	.intro-content div.intro-img {
+		margin-top: 5%;
+		margin-bottom: 5%;
+		width: 90%;
+	}
+
+	.intro-content div.intro-text {
+		margin-top: 5%;
+		margin-bottom: 5%;
+		width: 90%;
+	}
+
+	footer div.footer-content {
+		margin: 3% 0;
+	}
+
+	footer div.footer-content h3 {
+	  font-size: 1.6rem;
+	  margin-bottom: 20%;
+	}
+
+	div.footer-social-media {
+		margin-top: 20%;
+	}
 }
