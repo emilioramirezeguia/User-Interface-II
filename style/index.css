@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
 }
 ol, ul {
 	list-style: none;
@@ -56,6 +57,7 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
+	align-items: center;
   padding: 3%;
 }
 
@@ -67,25 +69,23 @@ header h1 {
 }
 
 header nav {
+	display: flex;
+	justify-content: center;
   margin-top: 2%;
+	width: 100%;
 }
 
 header nav a {
-  background-color: white;
-  color: #4682B4;
+  color: white;
   letter-spacing: 1.5px;
+	font-size: 1.3rem;
   padding: 0.5% 1.5%;
   text-decoration: none;
-  width: 25%;
 }
 
 header nav a:hover {
-  background-color: #4682B4;
-  border: 1px solid white;
   color: white;
-  letter-spacing: 1.5px;
-  padding: 0.5% 1.5%;
-  text-decoration: none;
+	text-decoration: underline;
 }
 
 /* ==== INTRO SECTION STYLES ==== */
@@ -100,6 +100,8 @@ header nav a:hover {
 }
 
 .intro-content div.intro-img {
+	display: flex;
+	justify-content: center;
   width: 50%;
 }
 
@@ -121,19 +123,16 @@ header nav a:hover {
   background-color: #4682B4;
   color: white;
   letter-spacing: 1.5px;
-  padding: 2% 3%;
+  padding: 3% 4%;
 	text-align: center;
   text-decoration: none;
-	width: 25%;
+	width: 30%;
 }
 
 .intro-content div.intro-text a:hover {
   background-color: white;
   border: 1px solid #4682B4;
   color: #4682B4;
-  letter-spacing: 1.5px;
-  padding: 2% 3.0%;
-  text-decoration: none;
 }
 
 .intro-content div.intro-text p {
@@ -174,20 +173,21 @@ footer {
 
 footer div.footer-content {
   text-align: center;
+	margin: 1% 0;
   width: 50%;
 }
 
 footer div.footer-content h3 {
   font-size: 1.872rem;
   font-weight: 500;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 div.footer-content > a {
   background-color: white;
   color: #4682B4;
   letter-spacing: 1.5px;
-  padding: 2% 3.0%;
+  padding: 3% 4%;
   text-decoration: none;
 }
 
@@ -195,13 +195,10 @@ div.footer-content > a:hover {
 	background-color: #4682B4;
 	border: 1px solid white;
 	color: white;
-	letter-spacing: 1.5px;
-	padding: 2% 3%;
-	text-decoration: none;
 }
 
 div.footer-social-media {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
  .footer-social-media a {
@@ -211,6 +208,36 @@ div.footer-social-media {
 
 @media (max-width: 800px) {
 
+	.intro-content {
+	  flex-direction: column;
+		align-items: center;
+	}
+
+	.intro-content div.intro-img {
+		margin-bottom: 2.5%;
+	  width: 90%;
+	}
+
+	.intro-content div.intro-text {
+		margin-top: 2.5%;
+	  width: 90%;
+	}
+
+	.intro-content div.intro-text a {
+	  padding: 5% 6%;
+	}
+
+	footer div.footer-content h3 {
+	  margin-bottom: 15%;
+	}
+
+	div.footer-content > a {
+	  padding: 5% 6%;
+	}
+
+	div.footer-social-media {
+	  margin-top: 15%;
+	}
 }
 
 @media (max-width: 500px) {
