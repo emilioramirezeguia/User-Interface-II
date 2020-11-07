@@ -1,1 +1,389 @@
 /* Add CSS styling here */
+
+/* ==== ENTIRE DOCUMENT STYLES ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+  max-width:100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==== HEADER STYLES ==== */
+
+#skip a {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+#skip a:focus {
+position:static;
+width:auto;
+height:auto;
+}
+
+header {
+  background-color: #4682B4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+  padding: 3% 0;
+}
+
+header h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
+  margin-top: 2%;
+	width: 100%;
+}
+
+header nav a {
+  color: white;
+  letter-spacing: 1.5px;
+	font-size: 1.3rem;
+  padding: 0.5% 1.5%;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: white;
+	text-decoration: underline;
+}
+
+/* ==== INTRO SECTION STYLES ==== */
+
+#intro {
+  padding: 5%;
+}
+
+.intro-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.intro-content div.intro-img {
+	display: flex;
+	justify-content: center;
+  width: 50%;
+}
+
+.intro-content div.intro-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  width: 50%;
+}
+
+.intro-content div.intro-text h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.intro-content div.intro-text a {
+  background-color: #4682B4;
+  color: white;
+  letter-spacing: 1.5px;
+  padding: 3% 4%;
+	text-align: center;
+  text-decoration: none;
+	width: 30%;
+}
+
+.intro-content div.intro-text a:hover {
+  background-color: white;
+  border: 1px solid #4682B4;
+  color: #4682B4;
+}
+
+.intro-content div.intro-text p {
+  line-height: 2;
+  margin-top: 5%;
+}
+
+/* ==== GALLERY SECTION STYLES === */
+
+#gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  padding: 2.5% 5% 5% 5%;
+}
+
+#gallery h3 {
+	font-size: 1.872rem;
+  font-weight: 500;
+	margin: 5% 0;
+}
+
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-content figure {
+  margin: 20px 5px;
+  text-align: center;
+}
+
+.gallery-content figure figcaption {
+  margin: 5%;
+}
+
+/* ==== FOOTER STYLES === */
+
+footer {
+  background-color: #4682B4;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+
+footer div.footer-content {
+  text-align: center;
+	margin: 1% 0;
+  width: 50%;
+}
+
+footer div.footer-content h3 {
+  font-size: 1.872rem;
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+div.footer-content > a {
+  background-color: white;
+  color: #4682B4;
+  letter-spacing: 1.5px;
+  padding: 3% 4%;
+  text-decoration: none;
+}
+
+div.footer-content > a:hover {
+	background-color: #4682B4;
+	border: 1px solid white;
+	color: white;
+}
+
+div.footer-social-media {
+  margin-top: 10%;
+}
+
+ .footer-social-media a {
+   color: white;
+   padding: 0 1.5%;
+}
+
+/* ====== RESPONSIVE ====== */
+
+/* 800px screen size and below */
+
+@media (max-width: 800px) {
+	header {
+		padding: 4% 0;
+	}
+
+	.intro-content {
+	  flex-direction: column;
+		align-items: center;
+	}
+
+	.intro-content div.intro-img {
+		margin-bottom: 2.5%;
+	  width: 90%;
+	}
+
+	.intro-content div.intro-text {
+		margin-top: 2.5%;
+	  width: 90%;
+	}
+
+	.intro-content div.intro-text a {
+	  padding: 5% 6%;
+	}
+
+	footer div.footer-content h3 {
+	  margin-bottom: 15%;
+	}
+
+	div.footer-content > a {
+	  padding: 5% 6%;
+	}
+
+	div.footer-social-media {
+	  margin-top: 15%;
+	}
+}
+
+/* 500px screen size and below */
+
+@media (max-width: 500px) {
+	header {
+		padding: 5% 0;
+	}
+
+	header h1 {
+	  font-size: 2.4rem;
+	}
+
+	header nav {
+	  margin-top: 3%;
+	}
+
+	header nav a {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
+	.intro-content div.intro-img {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.intro-content div.intro-text {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.intro-content div.intro-text a {
+		width: 50%;
+	}
+
+	#gallery h3 {
+		font-size: 1.6rem;
+	}
+
+	footer div.footer-content {
+		margin: 3% 0;
+	}
+
+	footer div.footer-content h3 {
+	  font-size: 1.6rem;
+	  margin-bottom: 20%;
+	}
+
+	div.footer-social-media {
+		margin-top: 20%;
+	}
+}
+
+/* 360px screen size and below */
+
+@media (max-width: 360px) {
+	header {
+		padding: 7% 0;
+	}
+
+	header h1 {
+		font-size: 2rem;
+	}
+
+	header nav {
+		margin-top: 5%;
+	}
+
+	header nav a {
+		font-size: 1.2rem;
+	}
+
+	.intro-content div.intro-img {
+		width: 300px;
+		height: 300px;
+		margin-top: 7.5%;
+		margin-bottom: 7.5%;
+	}
+
+	.intro-content div.intro-text {
+		margin-top: 7.5%;
+		margin-bottom: 7.5%;
+	}
+
+	.intro-content div.intro-text h2 {
+	  font-size: 1.872rem;
+	}
+
+	.intro-content div.intro-text a {
+		font-size: 1.1rem;
+		padding: 7% 8%;
+		width: 70%;
+	}
+
+	.intro-content div.intro-text p {
+		font-size: 1.1rem;
+	  margin-top: 10%;
+	}
+
+	footer div.footer-content {
+		margin: 3% 0;
+		width: 70%;
+	}
+
+	/* footer div.footer-content {
+		margin: 3% 0;
+	} */
+
+	/* footer div.footer-content h3 {
+		font-size: 1.6rem;
+		margin-bottom: 20%;
+	} */
+
+	/* div.footer-social-media {
+		margin-top: 20%;
+	} */
+}
